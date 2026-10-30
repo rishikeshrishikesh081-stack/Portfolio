@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Rishikesh M — IT professional and aspiring Python developer."
+    />
+    <meta name="theme-color" content="#09090b" />
+    <title>Rishikesh M — Python Developer Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient" aria-hidden="true">
+      <span class="ambient__orb ambient__orb--blue"></span>
+      <span class="ambient__orb ambient__orb--violet"></span>
+      <span class="ambient__grid"></span>
+    </div>
+
+    <header class="nav" data-nav>
+      <div class="nav__inner">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">RM</span>
+          <span class="brand__name">Rishikesh M</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#project">Project</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a class="nav__cta" href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <span class="sr-only">Menu</span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+      <nav aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open to software development opportunities
+            </p>
+            <h1>
+              Building practical software as an
+              <span class="accent-text">aspiring Python developer.</span>
+            </h1>
+            <p class="hero__lede">
+              Motivated IT professional with strong foundational knowledge in
+              Python, object-oriented programming, and debugging — looking to
+              support software development tasks, build scalable applications,
+              and grow within a technology-driven organization.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#project">View project</a>
+              <a class="btn btn--ghost" href="Rishikesh_Resume_2004.pdf" download
+                >Download resume</a
+              >
+            </div>
+            <div class="hero__meta">
+              <div class="socials" aria-label="Social profiles">
+                <a
+                  href="https://github.com/rishikeshrishikesh081-stack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+                <a
+                  href="https://linkedin.com/in/rishikesh-m-6b0090367"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+                <a href="mailto:rishikeshrishikesh081@gmail.com">Email</a>
+              </div>
+              <ul class="tech-strip" aria-label="Core technologies">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="stage">
+              <div class="stage__glow"></div>
+              <article class="code-panel">
+                <header>
+                  <span></span><span></span><span></span>
+                </header>
+                <pre><code><span class="k">class</span> <span class="n">LiveAuction</span>:
+    <span class="k">def</span> <span class="n">place_bid</span>(self, user, amount):
+        <span class="k">if</span> amount &gt; self.highest:
+            self.highest = amount
+            self.winner = user
+            <span class="k">return</span> <span class="s">"leading"</span>
+        <span class="k">return</span> <span class="s">"outbid"</span></code></pre>
+              </article>
+              <div class="float-card float-card--top">
+                <p>Live auction</p>
+                <strong>Highest bid</strong>
+                <span>Timer active</span>
+              </div>
+              <div class="float-card float-card--bottom">
+                <p>Roles</p>
+                <div class="chips">
+                  <span>Admin</span>
+                  <span>Seller</span>
+                  <span>Buyer</span>
+                </div>
+              </div>
+              <svg class="orbit" viewBox="0 0 320 320">
+                <circle cx="160" cy="160" r="148" />
+                <circle cx="160" cy="160" r="108" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about__layout">
+          <div class="section-heading">
+            <p class="kicker">About</p>
+            <h2>A focused path into software development.</h2>
+          </div>
+          <div class="about__body">
+            <p>
+              I am Rishikesh M, an IT professional building a career around
+              Python development. My work so far combines coursework, internships,
+              and a full-stack auction platform — with an emphasis on practical
+              problem solving, debugging, and writing software that can scale.
+            </p>
+            <p>
+              I am looking to contribute to software development tasks, continue
+              strengthening object-oriented design, and grow inside a
+              technology-driven team.
+            </p>
+            <dl class="about__facts">
+              <div>
+                <dt>Education</dt>
+                <dd>MCA, Bishop Heber College</dd>
+              </div>
+              <div>
+                <dt>College city</dt>
+                <dd>Tiruchirappalli, Tamil Nadu</dd>
+              </div>
+              <div>
+                <dt>Languages</dt>
+                <dd>Tamil · English (Higher Grade)</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Python, web, and data fundamentals</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="section-heading section-heading--wide">
+            <p class="kicker">Capabilities</p>
+            <h2>A clear, organized technology stack.</h2>
+          </div>
+          <div class="skill-groups">
+            <article class="skill-group">
+              <h3>Programming languages</h3>
+              <ul>
+                <li>Python</li>
+                <li>SQL</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Data and AI</h3>
+              <ul>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <li>Generative AI (Basics)</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Web technologies</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Database</h3>
+              <ul>
+                <li>MySQL</li>
+              </ul>
+            </article>
+            <article class="skill-group skill-group--wide">
+              <h3>Tools</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>PyCharm</li>
+                <li>XAMPP</li>
+                <li>Microsoft Excel</li>
+                <li>Canva (Design Basics)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project" id="project">
+        <div class="container">
+          <div class="section-heading section-heading--title">
+            <p class="kicker">Featured work</p>
+            <h2>Online Auction and Bidding System</h2>
+          </div>
+
+          <article class="feature">
+            <div class="feature__visual">
+              <div class="auction-ui">
+                <div class="auction-ui__bar">
+                  <span>Live auction</span>
+                  <span class="pulse">Bidding open</span>
+                </div>
+                <div class="auction-ui__grid">
+                  <div class="lot">
+                    <div class="lot__media"></div>
+                    <p>Lot 01</p>
+                    <strong>Open bidding</strong>
+                  </div>
+                  <div class="lot lot--lead">
+                    <div class="lot__media"></div>
+                    <p>Lot 02</p>
+                    <strong>Leading bid</strong>
+                  </div>
+                  <div class="lot">
+                    <div class="lot__media"></div>
+                    <p>Lot 03</p>
+                    <strong>In progress</strong>
+                  </div>
+                </div>
+                <div class="auction-ui__footer">
+                  <span>Winner selected from highest bid</span>
+                  <span>00:42 remaining</span>
+                </div>
+              </div>
+            </div>
+            <div class="feature__copy">
+              <p>
+                Developed a web-based Online Auction and Bidding System that
+                allows users to register, list products, participate in live
+                bidding, and determine winners based on highest bids. The system
+                provides a secure and transparent platform for conducting online
+                auctions and tenders, useful for e-commerce and procurement
+                scenarios. It handles user authentication, product management,
+                bidding logic, auction timing, and winner declaration.
+              </p>
+              <h3>Advanced features</h3>
+              <ul class="feature-list">
+                <li>
+                  Implemented real-time bidding with auction timers and automatic
+                  highest-bid winner selection.
+                </li>
+                <li>
+                  Built secure, role-based access control (Admin, Seller, Buyer)
+                  with authentication and validation.
+                </li>
+                <li>
+                  Developed admin dashboard and notifications for monitoring
+                  auctions, bids, and user activity.
+                </li>
+                <li>
+                  Built a modern, responsive UI for all devices, with
+                  mobile-friendly layouts (Flexbox/Grid, media queries) and
+                  interactive styling (hover effects, animations, live bid
+                  highlights).
+                </li>
+              </ul>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Supabase</span>
+                <span>MySQL</span>
+                <span>VS Code</span>
+                <span>PyCharm</span>
+                <span>XAMPP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="container">
+          <div class="section-heading section-heading--wide">
+            <p class="kicker">Experience</p>
+            <h2>Internships</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <div class="timeline__meta">
+                <p>July 2026 – November 2026</p>
+                <span>Current</span>
+              </div>
+              <div class="timeline__body">
+                <h3>Intern</h3>
+                <p class="org">
+                  Sri Sri Rural Talent Innovation Centre, Papanasam, Thanjavur
+                </p>
+                <p>
+                  Trained in Python, Generative AI, MySQL, data visualization,
+                  and data analysis.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline__meta">
+                <p>April 2025 – May 2025</p>
+              </div>
+              <div class="timeline__body">
+                <h3>Software Developer Intern</h3>
+                <p class="org">
+                  Sivasethu Infotech Pvt Ltd, Tiruchirappalli, India
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section education" id="education">
+        <div class="container education__grid">
+          <div>
+            <div class="section-heading">
+              <p class="kicker">Education</p>
+              <h2>Academic background</h2>
+            </div>
+            <ul class="edu-list">
+              <li>
+                <p class="edu-list__degree">
+                  Master of Computer Applications (MCA)
+                </p>
+                <p class="edu-list__school">
+                  Bishop Heber College (Autonomous), Tiruchirappalli
+                </p>
+                <p class="edu-list__meta">2026 · Percentage: 64.47%</p>
+              </li>
+              <li>
+                <p class="edu-list__degree">BCA</p>
+                <p class="edu-list__school">
+                  Bishop Heber College (Autonomous), Tiruchirappalli, Tamil Nadu,
+                  India
+                </p>
+                <p class="edu-list__meta">2024 · Aggregate 58%</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-heading">
+              <p class="kicker">Certifications</p>
+              <h2>Courses completed</h2>
+            </div>
+            <ul class="cert-list">
+              <li>
+                <span class="marker" aria-hidden="true"></span>
+                <p>Completed a course in Python Programming</p>
+              </li>
+              <li>
+                <span class="marker" aria-hidden="true"></span>
+                <p>Logics in Programming</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact__panel">
+          <div>
+            <p class="kicker">Contact</p>
+            <h2>Let’s talk about a software development role.</h2>
+            <p>
+              I am looking to support software development tasks and grow within
+              a technology-driven organization. Reach out by email, phone, or
+              LinkedIn.
+            </p>
+          </div>
+          <div class="contact__actions">
+            <a class="btn btn--primary btn--lg" href="mailto:rishikeshrishikesh081@gmail.com"
+              >Email me</a
+            >
+            <ul class="contact__links">
+              <li>
+                <span>Email</span>
+                <a href="mailto:rishikeshrishikesh081@gmail.com"
+                  >rishikeshrishikesh081@gmail.com</a
+                >
+              </li>
+              <li>
+                <span>Phone</span>
+                <a href="tel:+917010327371">7010327371</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a
+                  href="https://linkedin.com/in/rishikesh-m-6b0090367"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >linkedin.com/in/rishikesh-m-6b0090367</a
+                >
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a
+                  href="https://github.com/rishikeshrishikesh081-stack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >github.com/rishikeshrishikesh081-stack</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Rishikesh M</p>
+        <p>Python · Web · Data fundamentals</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
